@@ -1,0 +1,39 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-4 text-pink">Liste des Clients</h2>
+
+  <div *ngIf="customers">  <!-- Vérifie si customers a des éléments -->
+    <!-- Table des clients -->
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Email</th>
+        <th>Bills</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let customer of customers._embedded.customers">
+        <td>{{ customer.id }}</td>
+        <td>{{ customer.name }}</td>
+        <td>{{ customer.email }}</td>
+        <td>
+          <a [href]="customer._links.self.href" class="btn btn-pink btn-sm">View Details</a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Display the "Loading customers..." message while the data is being fetched -->
+  <div *ngIf="!customers" class="text-center text-pink">
+    <p>Loading customers...</p>
+  </div>
+
+  <!-- Display customers and the "View Bills" button -->
+  <div *ngFor="let customer of customers" class="customer-item">
+    <h3>{{ customer.name }}</h3>
+    <button [routerLink]="['/bills', customer.id]" class="btn btn-primary">View Bills</button>
+  </div>
+
+</div>

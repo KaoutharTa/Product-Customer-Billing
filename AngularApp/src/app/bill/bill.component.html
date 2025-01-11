@@ -1,0 +1,30 @@
+<div class="summary-container">
+  <h1>Bill Summary</h1>
+  <p>Customer Name: {{ customerName }}</p>
+  <p>Email: {{ customerEmail }}</p>
+  <p>Order Status: {{ orderStatus }}</p>
+</div>
+
+<div style="margin: 30px 20px 20px;">
+  <table class="bill-table">
+    <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>Price (Before Discount)</th>
+      <th>Quantity</th>
+      <th>Discount (%)</th>
+      <th>Total Price (After Discount)</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let element of dataSource">
+      <td>{{ element.productName }}</td>
+      <td>{{ element.priceBeforeDiscount }} Dhs</td>
+      <td>{{ element.quantity }}</td>
+      <td>{{ element.discount | number: '1.0-0' }}%</td>
+      <td>{{ element.totalPriceAfterDiscount | number: '1.2-2' }} Dhs</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

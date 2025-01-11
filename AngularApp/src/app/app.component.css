@@ -1,0 +1,32 @@
+/* Navbar custom styling */
+.navbar {
+  background-color: #f8f0f6; /* Light pink background */
+}
+
+.navbar-brand, .nav-link, .dropdown-item {
+  color: #d9538c !important; /* Pink text color */
+}
+
+.navbar-toggler-icon {
+  background-color: #d9538c; /* Pink icon for the toggle button */
+}
+
+.nav-link:hover, .dropdown-item:hover, .btn-outline-pink:hover {
+  background-color: #d9538c; /* Pink hover effect for navbar items */
+  color: white !important; /* White text on hover */
+}
+
+.navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-item .nav-link:focus {
+  color: #c13768; /* Darker pink color for active links */
+}
+
+/* Search button customization */
+.btn-outline-pink {
+  border-color: #d9538c; /* Pink border */
+  color: #d9538c; /* Pink text color */
+}
+
+.btn-outline-pink:hover {
+  background-color: #d9538c; /* Pink background on hover */
+  color: white; /* White text on hover */
+}

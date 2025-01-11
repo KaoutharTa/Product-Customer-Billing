@@ -1,0 +1,30 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4 text-pink">Products List</h2>
+
+  <div *ngIf="products">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped table-pink">
+        <thead class="thead-custom">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let product of products._embedded.products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.quantity }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div *ngIf="!products" class="text-center text-pink">
+    <p>Loading products...</p>
+  </div>
+</div>
