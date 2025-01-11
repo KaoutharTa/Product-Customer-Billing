@@ -71,3 +71,26 @@ To complete the application, an Angular client was developed to interact with th
 
 ## Conclusion
 This project successfully designed and implemented a microservice-based application for managing invoices, products, and customers. By using Spring Boot to develop the microservices, Spring Cloud Gateway for route management, Eureka for service registration, and OpenFeign for inter-service communication, a modular, scalable, and flexible system was created. The Angular frontend provides a user-friendly interface for viewing invoices and products, completing the overall solution.
+
+## Project Screenshots
+
+Here are some screenshots of the application:
+
+![Picture 1](pictures/Picture1.png)
+![Picture 2](pictures/Picture2.png)
+![Picture 3](pictures/Picture3.png)
+![Picture 4](pictures/Picture4.png)
+![Picture 5](pictures/Picture5.png)
+![Picture 6](pictures/Picture6.png)
+![Picture 7](pictures/Picture7.png)
+![Picture 8](pictures/Picture8.png)
+![Picture 9](pictures/Picture9.png)
+![Picture 10](pictures/Picture10.png)
+![Picture 11](pictures/Picture11.png)
+![Picture 12](pictures/Picture12.png)
+![Picture 13](pictures/Picture13.png)
+![Picture 14](pictures/Picture14.png)
+![Picture 15](pictures/Picture15.png)
+![Picture 16](pictures/Picture16.png)
+![Picture 17](pictures/Picture17.png)
+
