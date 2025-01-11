@@ -14,6 +14,10 @@ The first microservice developed is responsible for managing customer informatio
   - Developed a `CustomerRepository` based on Spring Data for customer data management.
   - Exposed a RESTful API using Spring Data REST, allowing interaction with the database via auto-generated endpoints.
   - Tested the API by making HTTP calls to verify CRUD operations for customer data.
+ 
+![Picture 1](Pictures/Picture1.png)
+![Picture 2](Pictures/Picture2.png)
+![Picture 3](Pictures/Picture3.png)
 
 ### 2. Inventory-Service Microservice
 The second microservice is dedicated to managing products in the inventory, enabling addition, viewing, and management of product information.
@@ -25,6 +29,11 @@ The second microservice is dedicated to managing products in the inventory, enab
   - Exposed a RESTful API using Spring Data REST to enable easy access to products via auto-generated endpoints.
   - Tested the API to ensure proper product management functionality.
 
+
+![Picture 4](Pictures/Picture4.png)
+![Picture 5](Pictures/Picture5.png)
+![Picture 6](Pictures/Picture6.png)
+
 ### 3. Gateway-Service Microservice
 The Gateway microservice, built with Spring Cloud Gateway, serves as a single entry point for external requests and routes them to the appropriate microservices.
 
@@ -33,6 +42,8 @@ The Gateway microservice, built with Spring Cloud Gateway, serves as a single en
   - Configured Spring Cloud Gateway for route management.
   - Developed static routing configuration using the `application.yml` file to define redirection rules.
   - Tested the proxy service to ensure proper routing of requests to the correct microservices.
+![Picture 7](Pictures/Picture7.png)
+![Picture 8](Pictures/Picture8.png)
 
 ### 4. Registry-Service Microservice with Netflix Eureka
 The Registry-Service microservice utilizes Netflix Eureka to register and dynamically manage services in the ecosystem.
@@ -42,6 +53,9 @@ The Registry-Service microservice utilizes Netflix Eureka to register and dynami
   - Set up an Eureka server for service registration.
   - Configured microservices to automatically register with Eureka.
   - Tested the Eureka server to verify service registration and discovery through the registry.
+    
+![Picture 9](Pictures/Picture9.png)
+
 
 ### 5. Dynamic Proxy Configuration with Eureka
 One key feature of this architecture is the ability to dynamically route requests to microservices registered in Eureka.
@@ -50,7 +64,7 @@ One key feature of this architecture is the ability to dynamically route request
 - **Actions Taken**:
   - Updated Spring Cloud Gateway configuration to interact with Eureka and dynamically use registered services.
   - Tested route management to ensure seamless communication between services via Eureka.
-
+![Picture 10](Pictures/Picture10.png)
 ### 6. Billing-Service Microservice with OpenFeign
 The Billing-Service microservice handles customer invoices and uses OpenFeign for communication between microservices.
 
@@ -59,7 +73,10 @@ The Billing-Service microservice handles customer invoices and uses OpenFeign fo
   - Developed the Billing-Service API to handle invoice creation and retrieval.
   - Used OpenFeign to integrate communication between the billing service and the customer and product services.
   - Tested invoice creation using customer and product information to verify smooth interaction between services.
-
+![Picture 11](Pictures/Picture11.png)
+![Picture 12](Pictures/Picture12.png)
+![Picture 13](Pictures/Picture13.png)
+![Picture 14](Pictures/Picture14.png)
 ### 7. Angular Client for Invoice Display
 To complete the application, an Angular client was developed to interact with the microservices and display invoices to the user.
 
@@ -68,30 +85,18 @@ To complete the application, an Angular client was developed to interact with th
   - Created Angular components to display information related to invoices, products, and customers.
   - Set up Angular routing for navigation between different pages (products, customers, invoices).
   - Tested frontend integration with the microservices to ensure data is retrieved and displayed correctly to the user.
-
-## Conclusion
-This project successfully designed and implemented a microservice-based application for managing invoices, products, and customers. By using Spring Boot to develop the microservices, Spring Cloud Gateway for route management, Eureka for service registration, and OpenFeign for inter-service communication, a modular, scalable, and flexible system was created. The Angular frontend provides a user-friendly interface for viewing invoices and products, completing the overall solution.
-
-## Project Screenshots
-
-Here are some screenshots of the application:
-
-![Picture 1](Pictures/Picture1.png)
-![Picture 2](Pictures/Picture2.png)
-![Picture 3](Pictures/Picture3.png)
-![Picture 4](Pictures/Picture4.png)
-![Picture 5](Pictures/Picture5.png)
-![Picture 6](Pictures/Picture6.png)
-![Picture 7](Pictures/Picture7.png)
-![Picture 8](Pictures/Picture8.png)
-![Picture 9](Pictures/Picture9.png)
-![Picture 10](Pictures/Picture10.png)
-![Picture 11](Pictures/Picture11.png)
-![Picture 12](Pictures/Picture12.png)
-![Picture 13](Pictures/Picture13.png)
-![Picture 14](Pictures/Picture14.png)
 ![Picture 15](Pictures/Picture15.png)
 ![Picture 16](Pictures/Picture16.png)
 ![Picture 17](Pictures/Picture17.png)
+## Conclusion
+This project successfully designed and implemented a microservice-based application for managing invoices, products, and customers. By using Spring Boot to develop the microservices, Spring Cloud Gateway for route management, Eureka for service registration, and OpenFeign for inter-service communication, a modular, scalable, and flexible system was created. The Angular frontend provides a user-friendly interface for viewing invoices and products, completing the overall solution.
+
+
+
+
+
+
+
+
 
 
